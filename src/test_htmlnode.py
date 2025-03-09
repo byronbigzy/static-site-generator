@@ -86,7 +86,7 @@ class TestHTMLNode(unittest.TestCase):
             {"href": "https://www.google.com", "target": "_blank"},
         )
 
-        self.assertEqual(repr(node), "HTMLNode(link, google, Children: {child1, child2}, )")
+        self.assertEqual(repr(node), "HTMLNode(link, google, Children: ['child1', 'child2'], {'href': 'https://www.google.com', 'target': '_blank'})")
 
     # Leaf Node Tests
     def test_leaf_to_html_p(self):
